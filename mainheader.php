@@ -1,3 +1,6 @@
+
+ 
+ 
  <!-- ======= Hero Section ======= -->
  <section id="hero" class="hero d-flex align-items-center section-bg">
     <div class="container">
@@ -15,4 +18,19 @@
         </div>
       </div>
     </div>
-  </section><!-- End Hero Section -->
+  </section>
+   
+ <?php
+ 
+ 
+ $list = listarTodosRegistros('tbmainheader','titulo','A');
+ if ($list == 'Vazio') {
+  echo  '<center><h5>Nada no banco de dados<h5></center>';
+ } else {
+  foreach ($list as $listretorno){
+ $titulo =  $listretorno-> titulo;
+  }
+ }
+echo $titulo;
+ ?>
+  <!-- End Hero Section -->

@@ -35,6 +35,15 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <?php
+  include_once 'conexao.php';
+  
+  include_once 'constantes.php';
+
+  include_once 'funcoes.php';
+
+  ?>
+
 </head>
 
 <body>
@@ -78,7 +87,9 @@ include_once'galeria.php';
   <?php
 include_once'contato.php';
 ?>
-   <?php
+   <?php 
+
+
 include_once'footer.php';
 ?>
  
